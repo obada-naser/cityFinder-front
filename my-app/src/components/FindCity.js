@@ -13,9 +13,11 @@ class FindCity extends React.Component {
 
   render() {
     return (
+        <>
+        <h1 Margin-Left='50%'>MAP</h1>
       <Form onSubmit={this.submit}>
         <Form.Group controlId='cityName'>
-          <Form.Label>Where do you want to go?</Form.Label>
+          
           <Form.Control
             onChange={this.props.updateCity}
             type='text'
@@ -29,9 +31,10 @@ class FindCity extends React.Component {
           </>
         )}
         <Button variant='primary' type='submit'>
-          Explore!
+          Search
         </Button>
       </Form>
+      </>
     );
   }
 }
